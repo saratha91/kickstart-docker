@@ -11,7 +11,7 @@ services:
       - ${HOME_DIR}/workload/supervisor/conf/server.conf:/etc/supervisord.conf
       - ${HOME_DIR}/workload/redis/${REDIS_VERSION}/conf/supervisor.ini:/opt/redis/system/supervisor.ini
       - ${HOME_DIR}/workload/redis/${REDIS_VERSION}/conf/cluster-server.conf:/opt/redis/conf/server.conf
-
+      
     ports:
       - "30001:3000"
     
